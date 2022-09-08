@@ -1,10 +1,7 @@
-city = input("Enter the first city: ")
-while city!="":
-    city2 = input("Enter the next city: ")
-    city3 = input("Enter the next city: ")
-    city4 = input("Enter the next city: ")
-    city5 = input("Enter the next city: ")
-    break
+Cities = []
 
-
-print(city, city2, city3, city4, city5)
+for n in range(5):
+    city = input("Give a city name: ")
+    Cities.append(city)
+for k in Cities:
+    print(k)

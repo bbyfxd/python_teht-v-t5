@@ -1,16 +1,10 @@
-import time
-import random
+from random import randint
 
-input("How many dice to roll?")
-roll_again = "yes"
+nopat = int(input("Montaako noppaa heitetään?"))
+nop_yht = 0
+for nopat in range(nopat):
+    x = randint(1,6)
+    nop_yht += x
 
-while roll_again == "yes":
-    print("/nRolling the dice...")
-    time.sleep(1)
-
-    dice1 = random.randint(1,6)
-    dice2 = random.randint(1,6)
-    print("The values are: ")
-    print("Dice 1 = ", dice1)
-    print("Dice 2 =", dice2)
+print(f"Noppien silmälukien summa on: {nop_yht}")
 
